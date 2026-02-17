@@ -1,5 +1,44 @@
 .header {
+    display: flex;
     background: #212122;
     height: 60px;
     padding: 0 16px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
+
+.header__buttons {
+    // display: flex;
+    // gap: 20px;
+}
+
+.header__button {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    margin-right: 20px;
+}
+
+.header__button:last-of-type {
+    margin-right: 0;
+}
+
+.header__button_search {
+    background-image: url(../../assets/search.svg);
+}
+.header__button_profile {
+    background-image: url(../../assets/profile.svg);
+}
+.header__button_menu {
+    background-image: url(../../assets/menu.svg);
+}
+
+@items: search, profile, menu;
+
+each(@items, {
+    .header__button_@{value} {
+       background-image: url('../../assets/@{value}.svg');
+    }
+});
