@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    background-color: #212122;
+    height: 60px;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header div {
+    // display: flex;
+    // gap: 20px;
+}
+
+.header__button {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    margin-right: 20px;
+}
+
+.header__button:last-of-type {
+    margin-right: 0;
+}
+
+@items: search, profile, menu;
+
+each(@items, {
+    .header__button__@{value} {
+        background-image: url('../../assets/@{value}.svg');
+    }
+})
