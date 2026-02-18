@@ -1,0 +1,31 @@
+.info {
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: var(--color-gray);
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+
+    & p {
+      color: #333333;
+    }
+
+    & img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 175px;
+  }
+}

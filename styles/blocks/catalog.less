@@ -1,42 +1,42 @@
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 10px;
+  margin-bottom: 30px;
 }
 
 .card {
-    text-align: center;
-    position: relative;
-    & img {
-        width: 100%;
+  text-align: center;
+  position: relative;
+  & img {
+    width: 100%;
+  }
+
+  &__price {
+    &__old {
+      position: relative;
+      // text-decoration: line-through;
+      color: #aeb5b9;
     }
 
-    &__price {
-
-        &__old {
-            position: relative;
-            // text-decoration: line-through;
-            color: #aeb5b9;
-        }
-
-        &__old:after {
-            position: absolute;
-            top: 9px;
-            left: 0;
-            content: '';
-            width: 100%;
-            height: 1px;
-            background-color: #aeb5b9;
-        }
+    &__old:after {
+      position: absolute;
+      top: 9px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #aeb5b9;
     }
+  }
 
-    &__sale {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 30px;
-        height: 30px;
-        background-size: cover;
-        background-image: url('../../assets/sale.png');
-    }
+  &__sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url("../../assets/sale.png");
+  }
 }
