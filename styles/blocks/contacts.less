@@ -1,0 +1,59 @@
+.contacts {
+    background-color: var(--color-primary);
+    min-height: 230px;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &__container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    &__socials, &__apps {
+        display: flex;
+        gap: 8px;
+        &-link {
+            display: inline-block;
+            transition: transform 0.2s ease;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__logo {
+        filter: invert(100) grayscale(1);
+        display: none;
+        
+        @media screen and (min-width: 768px) {
+            display: inline;
+        }
+    }
+
+    &__divider {
+        width: 100%;
+        height: 1px;
+        border: none;
+        background-color: #666666;
+    }
+
+    &__copyright {
+        color: #999999;
+        line-height: 20px;
+        flex: 1
+    }
+}

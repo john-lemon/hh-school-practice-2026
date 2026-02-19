@@ -8,7 +8,8 @@
 
 
 :root {
-    --color-dark: #212122;
+    --color-primary: #212122;
+    --color-secondary: #EEEEEE;
 }
 
 * {
@@ -20,6 +21,10 @@ body {
     color: #333;
     margin: 0;
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -43,12 +48,10 @@ h4 {
 .container {
     max-width: 930px;
     margin: 0 auto;
-
-    @media screen and (min-width: 930px) {
-        box-sizing: content-box;
-    }
+    padding: 0 16px;
 }
 
 .content {
-    padding: 0 16px;
+    flex-basis: 100%;
 }
+
