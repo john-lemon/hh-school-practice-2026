@@ -1,8 +1,11 @@
 .footer {
-  padding: 30px 15px;
   background-color: var(--color-dark);
-  display: flex;
-  flex-direction: column;
+
+  &__container {
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+  }
 
   &__social {
     display: flex;
@@ -14,6 +17,10 @@
       width: 36px;
       cursor: pointer;
       height: 36px;
+    }
+
+    & img:hover {
+      opacity: 0.65;
     }
   }
 
@@ -28,12 +35,20 @@
       width: 140px;
       height: 40px;
     }
+
+    & img:hover {
+      opacity: 0.65;
+    }
   }
 
   &__logo {
     display: none;
     width: 46px;
     height: 46px;
+  }
+
+  &__logo:hover {
+    opacity: 0.65;
   }
 
   & hr {
@@ -48,7 +63,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (@screen-tablet) {
   .footer {
     padding: 30px 35px;
 
@@ -63,7 +78,7 @@
 
 @media (min-width: 1024px) {
   .footer {
-    padding: 40px 175px;
+    padding: 40px 0;
 
     &__social {
       align-items: center;
