@@ -1,8 +1,49 @@
+@screen-tablet: ~'(min-width: 768px)';
+@screen-mobile: ~'(min-width: 320px)';
+
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --color-dark: #212122;
 }
 
 body {
     font: 14px/1.2 Arial, sans-serif;
+    margin: 0;
     color: #333;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+
+h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 1.18;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    @media (min-width: 930px) {
+        box-sizing: content-box;
+    }
+}
+
+.content {
+    padding: 0 16px;
+    
 }

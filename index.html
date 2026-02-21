@@ -4,8 +4,80 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width">
         <title>HTML и CSS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/styles.less" />
     </head>
     <body>
+        <header class="header">
+            <div class="header__container container">
+                <a href="/" class="header__logo">
+                    <img src="assets/hh.svg" alt="logo"/>
+                </a>
+                <div class="header__nav">
+                    <a href="/" class="header__nav_logo">
+                        <img src="assets/hh.svg" alt="logo"/>
+                    </a>
+                    <nav class="header__nav_nav">
+                        <a href="/" class="header__nav_link">Одежда</a>
+                        <a href="/" class="header__nav_link">Сумки</a>
+                        <a href="/" class="header__nav_link">Аксессуары</a>
+                        <a href="/" class="header__nav_link">Офисные принадлежности</a>
+                    </nav>
+                    <div class="header__nav_buttons">
+                        <button class="header__button_search" aria-label="Поиск"></button>
+                        <button class="header__button_sign-in" aria-label="Войти">Войти</button>
+                    </div>
+                </div>
+                <div class="header__buttons">
+                    <button aria-label="Поиск" class="header__button header__button_search"></button>
+                    <button aria-label="Профиль" class="header__button header__button_profile"></button>
+                    <button aria-label="Меню" class="header__button header__button_menu"></button>
+                </div>
+            </div>
+        </header>
+
+    <main class="content container">
+        <section class="catalog">
+            <h2>Популярные продукты</h2>
+            <div class="cards">
+                <div class="card">
+                    <img class="card__image" src="./images/product-1.jpg" alt="Зонт"/>
+                    <h4 class="card__title">Зонт</h4>
+                    <div class="card__price">1 990 ₽</div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="./images/product-2.jpg" alt="Зонт"/>
+                    <h4 class="card__title">Шоппер</h4>
+                    <div class="card__price">290 ₽</div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="./images/product-3.jpg" alt="Зонт"/>
+                    <h4 class="card__title">Тапочки</h4>
+                    <div class="card__price">750 ₽</div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="./images/product-4.jpg" alt="Зонт"/>
+                    <h4 class="card__title">Футболка</h4>
+                    <div class="card__sale"></div>
+                    <div class="card__price">
+                        <span class="card__price_old">690</span>
+                        390 ₽
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="./images/product-5.jpg" alt="Толстовка"/>
+                    <h4 class="card__title">Толстовка</h4>
+                    <div class="card__price">3 990 ₽</div>
+                </div>
+                <div class="card">
+                    <img class="card__image" src="./images/product-6.jpg" alt="Подушка"/>
+                    <h4 class="card__title">Подушка</h4>
+                    <div class="card__price">990 ₽</div>
+                </div>
+            </div>
+        </section>
+    </main>
     </body>
 </html>
