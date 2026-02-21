@@ -7,14 +7,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/styles.less" />
+        <link rel="stylesheet" href="./styles/styles.less"/>
     </head>
     <body>
         <header class="header">
             <div class="header__container container">
                 <div class="header__left">
                     <a href="/">
-                        <img src="assets/hh.svg" />
+                        <img src="assets/hh.svg" alt="логотип hh"/>
                     </a>
                     <nav class="header__nav">
                         <a href="/" class="header__nav-link">Одежда</a>
@@ -47,23 +47,27 @@
                 <h2>Популярные товары</h2>
                 <div class="cards">
                     <div class="card">
-                        <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
+                        <h3 class="hidden">Товар</h3>
+                        <img class="card__img" src="./images/product-1.jpg" alt="Зонт"/>
                         <h4 class="card__title">Зонт</h4>
                         <div class="card__price">1 990 ₽</div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="./images/product-2.jpg" alt="Зонт" />
+                        <h3 class="hidden">Товар</h3>
+                        <img class="card__img" src="./images/product-2.jpg" alt="Зонт"/>
                         <h4 class="card__title">Зонт</h4>
                         <div class="card__price">1 990 ₽</div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="./images/product-3.jpg" alt="Зонт" />
+                        <h3 class="hidden">Товар</h3>
+                        <img class="card__img" src="./images/product-3.jpg" alt="Зонт"/>
                         <h4 class="card__title">Зонт</h4>
                         <div class="card__price">1 990 ₽</div>
                     </div>
                     <div class="card">
+                        <h3 class="hidden">Товар</h3>
                         <div class="card__sale"></div>
-                        <img class="card__img" src="./images/product-4.jpg" alt="Зонт" />
+                        <img class="card__img" src="./images/product-4.jpg" alt="Зонт"/>
                         <h4 class="card__title">Футболка</h4>
                         <div class="card__price">
                             <span class="card__price_old">690</span>
@@ -71,20 +75,23 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
+                        <h3 class="hidden">Товар</h3>
+                        <img class="card__img" src="./images/product-1.jpg" alt="Зонт"/>
                         <h4 class="card__title">Зонт</h4>
                         <div class="card__price">1 990 ₽</div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="./images/product-2.jpg" alt="Зонт" />
+                        <h3 class="hidden">Товар</h3>
+                        <img class="card__img" src="./images/product-2.jpg" alt="Зонт"/>
                         <h4 class="card__title">Зонт</h4>
                         <div class="card__price">1 990 ₽</div>
                     </div>
 
                 </div>
             </section>
-            <section class="features-section">
-                <div class="container features">
+            <section class="features">
+                <h2 class="hidden">Популярные товары</h2>
+                <div class="container features__container">
                     <div class="feature">
                         <img class="feature__img" src="assets/support.svg" alt="Поддержка">
                         <p>Быстрая доставка по&nbsp;всей России</p>
@@ -116,7 +123,7 @@
                                 <img src="assets/footer/socials/instagram.svg" alt="instagram">
                             </a>
                         </div>
-                        <div class="footer__download-app">
+                        <div>
                             <a href="/">
                                 <img src="assets/footer/download-app/app-store.svg" alt="app store">
                             </a>
@@ -143,6 +150,7 @@
         <div class="order-background">
             <div class="order">
                 <form action="/" method="get">
+                    <h3 class="hidden">Форма</h3>
                     <h4>Контактное лицо</h4>
                     <input type="text" class="order__input" placeholder="ФИО" name="fio">
                     <input type="email" class="order__input" placeholder="Электронная почта" name="email">
