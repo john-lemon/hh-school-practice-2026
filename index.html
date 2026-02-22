@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.less" />
+    <script src="./js/slider.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -36,7 +37,9 @@
               <a href="/" class="header__nav-bot-link">Одежда</a>
               <a href="/" class="header__nav-bot-link">Сумки</a>
               <a href="/" class="header__nav-bot-link">Аксессуары</a>
-              <a href="/" class="header__nav-bot-link">Офисные принадлежности</a>
+              <a href="/" class="header__nav-bot-link"
+                >Офисные принадлежности</a
+              >
             </nav>
           </div>
           <div class="header__right">
@@ -65,6 +68,54 @@
     </header>
 
     <main>
+      <section>
+        <div class="slider">
+          <div class="slider__indicator" id="slider_indicator">
+            <div class="slider__indicator-item"></div>
+            <div class="slider__indicator-item"></div>
+            <div class="slider__indicator-item"></div>
+            <div class="slider__indicator-item"></div>
+          </div>
+          <div class="slider__items" id="slider">
+            <div class="slider__item">
+              <img class="slider__item-img" src="./images/slider.png" alt="Одежда hh" />
+              <div class="slider__item-desc">
+                <h1 class="slider__text">
+                  Мужская и&nbsp;женская одежда с&nbsp;символикой HeadHunter
+                </h1>
+                <button class="slider__btn">Перейти в каталог</button>
+              </div>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="./images/slider2.png" alt="Принадлежности hh" />
+              <div class="slider__item-desc">
+                <h1 class="slider__text">
+                  Офисные принадлежности с&nbsp;символикой HeadHunter
+                </h1>
+                <button class="slider__btn">Перейти в каталог</button>
+              </div>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="./images/slider.png" alt="Одежда hh" />
+              <div class="slider__item-desc">
+                <h1 class="slider__text">
+                  Мужская и&nbsp;женская одежда с&nbsp;символикой HeadHunter
+                </h1>
+                <button class="slider__btn">Перейти в каталог</button>
+              </div>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="./images/slider2.png" alt="Принадлежности hh" />
+              <div class="slider__item-desc">
+                <h1 class="slider__text">
+                  Офисные принадлежности с&nbsp;символикой HeadHunter
+                </h1>
+                <button class="slider__btn">Перейти в каталог</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="catalog container">
         <h2>Популярные товары</h2>
         <div class="cards">
