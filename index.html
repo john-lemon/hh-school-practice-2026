@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./styles/styles.less" />
     </head>
     <body>
+        <!-- page header -->
         <header class="header">
             <div class="header__container container">
                 <div class="header__left">
@@ -42,6 +43,8 @@
                 </div>
             </div>
         </header>
+
+        <!-- page main content -->
         <main class="content container">
             <section class="catalog">
                 <h2>Популярные товары</h2>
@@ -84,6 +87,7 @@
                 </div>
             </section>
         </main>
+        <!-- unfinished order modal window -->
         <div class="order-background">
             <div class="order">
                 <form action="/" method="get">
@@ -121,5 +125,85 @@
                 </form>
             </div>
         </div>
+        <!-- services content -->
+        <section class="services">
+            <div class="services__content">
+                <div class="service service--delivery">
+                    <img class="service__icon" src="assets/delivery.svg" alt="">
+                    <p class="service__text service__text--mobile">
+                        Быстрая доставка по всей<br>России
+                    </p>
+                    <p class="service__text service__text--desktop">
+                        Быстрая доставка<br>по всей России
+                    </p>
+                </div>
+                <div class="service service--warrancy">
+                    <img class="service__icon" src="assets/warrancy.svg" alt="">
+                    <p class="service__text service__text--mobile">
+                        100% гарантия возврата<br>и подлинность товара
+                    </p>
+                    <p class="service__text service__text--desktop">
+                        100% гарантия возврата<br>и подлинность товара
+                    </p>
+                </div>
+                <div class="service service--support">
+                    <img class="service__icon" src="assets/support.svg" alt="">
+                    <p class="service__text service__text--mobile">
+                        Круглосуточная служба<br>поддержки
+                    </p>
+                    <p class="service__text service__text--desktop">
+                        Круглосуточная<br>служба поддержки
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- page footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__top">
+                    <div class="footer__socials">
+                        <a class="footer__socials-link footer__socials-link--facebook" href="/"></a>
+                        <a class="footer__socials-link footer__socials-link--twitter" href="/"></a>
+                        <a class="footer__socials-link footer__socials-link--vk" href="/"></a>
+                        <a class="footer__socials-link footer__socials-link--instagram" href="/"></a>
+                    </div>
+                    <div class="footer__apps">
+                        <a href="/" class="app app--app-store">
+                            <img class="app__icon" src="assets/app_store.svg" alt="">
+                            <div class="app__text">
+                                <span class="app__text app__text--upper">Загрузите в<br></span>
+                                <span class="app__text app__text--lower">App Store</span>
+                            </div>
+                        </a>
+                        <a href="/" class="app app--google-play">
+                            <img class="app__icon" src="assets/google_play.svg" alt="">
+                            <div class="app__text">
+                                <span class="app__text app__text--upper">Доступно в<br></span>
+                                <span class="app__text app__text--lower">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="footer__hh-logo">
+                        <a href="/" class="footer__hh-logo-link"></a>
+                    </div>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__rights">
+                    <span class="footer__rights-text footer__rights-text--mobile">
+                        © 2019 Группа компаний HeadHunter<br>
+                        Сегодня на сайте <nobr>684 978 вакансий,</nobr>
+                        <nobr>34 789 747 резюме</nobr>, <nobr>858 923 компании</nobr>
+                        <nobr>и за неделю 1 211 363 приглашения</nobr>
+                    </span>
+
+                    <span class="footer__rights-text footer__rights-text--desktop">
+                        © 2019 Группа компаний HeadHunter<br>
+                        34 789 747 резюме, 858 923 компании
+                        и за неделю 1 211 363 приглашения
+                    </span>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
