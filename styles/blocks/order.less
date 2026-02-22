@@ -1,0 +1,108 @@
+.order {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+
+    &__modal {
+        background: white;
+        height: fit-content;
+        width: 100%;
+        max-width: 320px;
+        padding: 16px 20px;
+    }
+}
+
+.order__modal_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order__modal_form_input {
+    padding: 9px 10px;
+    border-radius: 0;
+    border: 1px solid #dfdedd;
+    width: 100%;
+}
+
+.order__modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order__modal_form_phone {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 3fr;
+    gap: 0;
+    align-items: center;
+    &_span {
+        text-align: end;
+        padding: 9px 10px;
+        border: 1px solid #dfdedd;
+    }
+}
+
+.order__modal_form_pickup {
+    display: flex;
+    width: 100%;
+}
+
+.order__modal_form_label {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 38px;
+}
+
+.order__modal_form_radio {
+    display: none;
+}
+
+.order__modal_form_radio:checked + label {
+    background: #dfdedd;
+}
+
+.select {
+    appearance: none;
+    height: 38px;
+    width: 100%;
+    border: 1px solid #999;
+    background-image:
+        url("../../assets/arrow.svg"),
+        linear-gradient(to right, #999 1px, transparent 1px);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding: 0 10px;
+    background-size: 28px auto;
+    border-radius: 0;
+}
+
+.textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 0;
+    border: 1px solid #dfdedd;
+    height: 100px;
+    padding: 10px;
+}
+
+.modal__pay_method {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.open__modal_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

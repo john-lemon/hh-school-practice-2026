@@ -1,83 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width" />
         <title>HTML и CSS</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./styles/styles.less" />
     </head>
     <body>
         <header class="header">
             <div class="header__container container">
                 <a href="/" class="header__logo">
-                    <img src="assets/hh.svg" alt="logo"/>
+                    <img src="assets/hh.svg" alt="logo" />
                 </a>
                 <div class="header__nav">
                     <a href="/" class="header__nav_logo">
-                        <img src="assets/hh.svg" alt="logo"/>
+                        <img src="assets/hh.svg" alt="logo" />
                     </a>
                     <nav class="header__nav_nav">
                         <a href="/" class="header__nav_link">Одежда</a>
                         <a href="/" class="header__nav_link">Сумки</a>
                         <a href="/" class="header__nav_link">Аксессуары</a>
-                        <a href="/" class="header__nav_link">Офисные принадлежности</a>
+                        <a href="/" class="header__nav_link"
+                            >Офисные принадлежности</a
+                        >
                     </nav>
                     <div class="header__nav_buttons">
-                        <button class="header__button_search" aria-label="Поиск"></button>
-                        <button class="header__button_sign-in" aria-label="Войти">Войти</button>
+                        <button
+                            class="header__button_search"
+                            aria-label="Поиск"
+                        ></button>
+                        <button
+                            class="header__button_sign-in"
+                            aria-label="Войти"
+                        >
+                            Войти
+                        </button>
                     </div>
                 </div>
                 <div class="header__buttons">
-                    <button aria-label="Поиск" class="header__button header__button_search"></button>
-                    <button aria-label="Профиль" class="header__button header__button_profile"></button>
-                    <button aria-label="Меню" class="header__button header__button_menu"></button>
+                    <button
+                        aria-label="Поиск"
+                        class="header__button header__button_search"
+                    ></button>
+                    <button
+                        aria-label="Профиль"
+                        class="header__button header__button_profile"
+                    ></button>
+                    <button
+                        aria-label="Меню"
+                        class="header__button header__button_menu"
+                    ></button>
                 </div>
             </div>
         </header>
 
-    <main class="content container">
-        <section class="catalog">
-            <h2>Популярные продукты</h2>
-            <div class="cards">
-                <div class="card">
-                    <img class="card__image" src="./images/product-1.jpg" alt="Зонт"/>
-                    <h4 class="card__title">Зонт</h4>
-                    <div class="card__price">1 990 ₽</div>
+        <main class="content container">
+            <section class="slider">
+                <img
+                    class="slider__image"
+                    src="./images/slider.png"
+                    alt="Слайдер"
+                />
+                <div class="slider__page">
+                    <div class="slider__page_dot slider__page_dot_active"></div>
+                    <div class="slider__page_dot"></div>
+                    <div class="slider__page_dot"></div>
+                    <div class="slider__page_dot"></div>
                 </div>
-                <div class="card">
-                    <img class="card__image" src="./images/product-2.jpg" alt="Зонт"/>
-                    <h4 class="card__title">Шоппер</h4>
-                    <div class="card__price">290 ₽</div>
+                <div class="slider__text">
+                    <h1>Мужская и женская одежда с символикой HeadHunter</h1>
+                    <button class="slider__button">Перейти в каталог</button>
                 </div>
-                <div class="card">
-                    <img class="card__image" src="./images/product-3.jpg" alt="Зонт"/>
-                    <h4 class="card__title">Тапочки</h4>
-                    <div class="card__price">750 ₽</div>
-                </div>
-                <div class="card">
-                    <img class="card__image" src="./images/product-4.jpg" alt="Зонт"/>
-                    <h4 class="card__title">Футболка</h4>
-                    <div class="card__sale"></div>
-                    <div class="card__price">
-                        <span class="card__price_old">690</span>
-                        390 ₽
+            </section>
+            <section class="catalog">
+                <h2>Популярные продукты</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="./images/product-1.jpg"
+                            alt="Зонт"
+                        />
+                        <h4 class="card__title">Зонт</h4>
+                        <div class="card__price">1 990 ₽</div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="./images/product-2.jpg"
+                            alt="Зонт"
+                        />
+                        <h4 class="card__title">Шоппер</h4>
+                        <div class="card__price">290 ₽</div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="./images/product-3.jpg"
+                            alt="Зонт"
+                        />
+                        <h4 class="card__title">Тапочки</h4>
+                        <div class="card__price">750 ₽</div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="./images/product-4.jpg"
+                            alt="Зонт"
+                        />
+                        <h4 class="card__title">Футболка</h4>
+                        <div class="card__sale"></div>
+                        <div class="card__price">
+                            <span class="card__price_old">690</span>
+                            390 ₽
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="./images/product-5.jpg"
+                            alt="Толстовка"
+                        />
+                        <h4 class="card__title">Толстовка</h4>
+                        <div class="card__price">3 990 ₽</div>
+                    </div>
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="./images/product-6.jpg"
+                            alt="Подушка"
+                        />
+                        <h4 class="card__title">Подушка</h4>
+                        <div class="card__price">990 ₽</div>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card__image" src="./images/product-5.jpg" alt="Толстовка"/>
-                    <h4 class="card__title">Толстовка</h4>
-                    <div class="card__price">3 990 ₽</div>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="about">
+                <div class="container about__container">
+                    <div class="about__block">
+                        <img src="./assets/support.svg" alt="support" />
+                        <p>Быстрая доставка по всей России</p>
+                    </div>
+                    <div class="about__block">
+                        <img src="./assets/return.svg" alt="return" />
+                        <p>100% гарантия возврата и подлинность товара</p>
+                    </div>
+                    <div class="about__block">
+                        <img src="./assets/delivery.svg" alt="delivery" />
+                        <p>Круглосуточная служба поддержки</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img class="card__image" src="./images/product-6.jpg" alt="Подушка"/>
-                    <h4 class="card__title">Подушка</h4>
-                    <div class="card__price">990 ₽</div>
+            </section>
+            <section class="info">
+                <div class="container info__container">
+                    <div class="info__links">
+                        <div class="social">
+                            <a href="/">
+                                <!-- У вас нету facebook) -->
+                                <img
+                                    src="./assets/facebook.svg"
+                                    alt="facebook"
+                                />
+                            </a>
+                            <a href="/">
+                                <!-- И твитер не нашёл -->
+                                <img src="./assets/twitter.svg" alt="twitter" />
+                            </a>
+                            <a href="https://vk.com/headhunter">
+                                <img src="./assets/vk.svg" alt="vk" />
+                            </a>
+                            <a href="/">
+                                <!-- Инстаграм тоже не нашёл) -->
+                                <img
+                                    src="./assets/instagram.svg"
+                                    alt="instagram"
+                                />
+                            </a>
+                        </div>
+                        <div class="app">
+                            <a
+                                href="https://apps.apple.com/us/app/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8-%D0%BD%D0%B0-hh/id502838820"
+                            >
+                                <img
+                                    src="./assets/app-store.svg"
+                                    alt="app-store"
+                                />
+                            </a>
+                            <a
+                                href="https://play.google.com/store/apps/details?id=ru.hh.android&hl=en_US"
+                            >
+                                <img
+                                    src="./assets/google-play.svg"
+                                    alt="google-play"
+                                />
+                            </a>
+                        </div>
+                        <img
+                            class="info__logo"
+                            src="./assets/hh-black.svg"
+                            alt="logo"
+                        />
+                    </div>
+                    <div class="separator"></div>
+
+                    <div class="copyright">
+                        © 2019 Группа компаний HeadHunter<br />
+                        Сегодня на сайте 684 978 вакансий, 34 789 747 резюме,
+                        858 923 компании и за неделю <br />
+                        1 211 363 приглашения
+                    </div>
                 </div>
+            </section>
+        </footer>
+        <div class="order" id="order">
+            <div class="order__modal">
+                <div class="order__modal_header">
+                    <h1>Оформление заказа</h1>
+                    <button class="order__modal_header_close" id="close_button">
+                        X
+                    </button>
+                </div>
+                <form class="order__modal_form">
+                    <h4>Контактное лицо</h4>
+                    <input
+                        class="order__modal_form_input"
+                        type="text"
+                        placeholder="ФИО"
+                    />
+                    <input
+                        class="order__modal_form_input"
+                        type="email"
+                        placeholder="Электронная почта"
+                    />
+                    <div class="order__modal_form_phone">
+                        <span class="order__modal_form_phone_span">+7</span>
+                        <input
+                            class="order__modal_form_input code"
+                            type="tel"
+                            placeholder="Код"
+                            maxlength="3"
+                        />
+                        <input
+                            class="order__modal_form_input"
+                            type="tel"
+                            placeholder="Номер"
+                            maxlength="7"
+                        />
+                    </div>
+                    <h4>Способ получения заказа</h4>
+                    <div class="order__modal_form_pickup">
+                        <input
+                            class="order__modal_form_radio"
+                            id="pickup"
+                            type="radio"
+                            value="pickup"
+                            name="pickup"
+                            checked
+                        />
+                        <label class="order__modal_form_label" for="pickup"
+                            >Самовывоз</label
+                        >
+                        <input
+                            class="order__modal_form_radio"
+                            id="delivery"
+                            type="radio"
+                            value="pickup"
+                            name="pickup"
+                        />
+                        <label class="order__modal_form_label" for="delivery"
+                            >Доставка</label
+                        >
+                    </div>
+
+                    <h4>Адрес</h4>
+                    <select name="city" class="select">
+                        <option>Москва</option>
+                        <option>Вологда</option>
+                        <option>Казань</option>
+                    </select>
+                    <textarea class="textarea" placeholder="Адрес"></textarea>
+                    <div class="modal__pay_method">
+                        <h4>Оплата</h4>
+                        <div>
+                            <input type="radio" id="online" name="pay_method" />
+                            <label for="online">Online-оплата</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="cash" name="pay_method" />
+                            <label for="cash">Наличные</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="received"
+                                name="pay_method"
+                            />
+                            <label for="received">При получении</label>
+                        </div>
+                    </div>
+
+                    <h4>Уведомления</h4>
+                    <div>
+                        <input type="checkbox" id="notification" />
+                        <label for="notification"
+                            >Хочу получать SMS уведомления</label
+                        >
+                    </div>
+                </form>
             </div>
-        </section>
-    </main>
+        </div>
+        <button class="open__modal_btn" id="open_modal">Модальное окно</button>
     </body>
+
+    <script>
+        const orderModal = document.getElementById("order");
+        const closeBtn = document.getElementById("close_button");
+        const openBtn = document.getElementById("open_modal");
+        closeBtn.addEventListener("click", () => {
+            orderModal.style.display = "none";
+        });
+        openBtn.addEventListener("click", () => {
+            orderModal.style.display = "flex";
+        });
+    </script>
 </html>

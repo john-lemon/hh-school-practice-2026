@@ -1,0 +1,47 @@
+.slider {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        @media screen and (@screen-tablet) {
+            align-items: start;
+            text-align: start;
+        }
+    }
+    @media screen and (@screen-tablet) {
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+}
+
+.slider__page {
+    display: flex;
+    gap: 4px;
+    @media screen and (@screen-tablet) {
+        align-self: end;
+    }
+    &_dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ccc;
+        cursor: pointer;
+
+        &_active {
+            background: #1f1f1f;
+        }
+    }
+}
+
+.slider__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}

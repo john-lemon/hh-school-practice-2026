@@ -1,0 +1,28 @@
+.about {
+    width: 100%;
+    background: #eee;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 16px 30px 34px;
+    @media screen and (@screen-tablet) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+}
+
+.about__block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media screen and (@screen-tablet) {
+        gap: 10px;
+    }
+}
