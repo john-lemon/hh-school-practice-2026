@@ -1,0 +1,150 @@
+@footer_background: black;
+
+// Цикл для установления иконок соц.сетей в нижней части страницы
+@socials_icons: facebook, twitter, vk, instagram;
+each(@socials_icons, {
+    .footer__socials-link--@{value} {
+       background-image: url('../../assets/@{value}.svg');
+       background-repeat: no-repeat
+    }
+});
+
+.footer {
+    .element_size(100%);
+    flex: 0 0 auto;
+    background-color: @footer_background;
+    display: flex;
+    padding: 30px 14px 10px 14px;
+
+    @media screen and (min-width: @desktop) {
+        padding-top: 40px;
+    }
+
+    &__content {
+        .element_size(100%);
+        display: flex;
+        flex-direction: column;
+        max-width: 930px;
+        margin: 0 auto;
+
+        >*:nth-child(1) {
+            margin-bottom: 30px;
+        }
+
+        >*:nth-child(2) {
+            margin-bottom: 10px;
+        }
+        
+        @media screen and (min-width: @desktop) {
+
+            >*:nth-child(2) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media screen and (min-width: @tablet) {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        @media screen and (min-width: @desktop) {
+            >*:nth-child(2)::after {
+                content: '';
+                width: 150px; 
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+        &-link {
+            .element_size(36px, 36px);
+        }
+    }
+
+    &__apps {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        .app {
+            .element_size(40px, 140px);
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #CCCCCC;
+            border-radius: 1px;
+            align-items: center;
+            text-decoration: none;
+            gap: 10px;
+
+            &__icon {
+                .element_size(30px, 30px);
+                padding-left: 10px;
+            }
+
+            &__text {
+                color: white;
+                line-height: 1;
+
+                &--upper {
+                    font-size: 10px;
+                }
+
+                &--lower {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &__hh-logo {
+        display: none;
+        background: url(../../assets/hh_footer_logo.svg);
+        margin-top: 5px;
+        .element_size(46px, 46px);
+
+        @media screen and (min-width: @desktop) {
+            display: block;
+        }
+    }
+
+    &__line {
+        .element_size(1px);
+        background-color: #666666;
+    }
+
+    &__rights {
+        max-width: 610px;
+
+        &-text {
+            color: #999999;
+            display: none;
+            line-height: 30px;
+            
+            &--mobile {
+                display: block;
+            }
+
+            @media screen and (min-width: @desktop) {
+                &--desktop {
+                    display: block;
+                }
+
+                &--mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}

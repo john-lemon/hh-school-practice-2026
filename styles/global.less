@@ -1,4 +1,12 @@
 @screen-tablet: ~'(min-width: 768px)';
+@tablet: 768px;
+@desktop: 1280px;
+
+// Миксин для задания размеров элементам страницы
+.element_size(@height, @width: 100%) {
+    height: @height;
+    width: @width;
+}
 
 @font-face {
     font-family: "Novelist";
@@ -6,23 +14,43 @@
     font-weight: normal;
 }
 
-
-:root {
-    --color-dark: #212122;
-}
-
 * {
     box-sizing: border-box;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font: 14px/1.2 Arial, sans-serif;
     color: #333;
     margin: 0;
     position: relative;
+
+    > .header,
+    > .content,
+    > .footer
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    > .header,
+    > .content,
+    > .services,
+    > .footer 
+    {
+        @media screen and (min-width: @tablet) {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    }
 }
 
-h1, h2, h3, h4 {
+h1, 
+h2, 
+h3, 
+h4 {
     font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
@@ -41,6 +69,7 @@ h4 {
 }
 
 .container {
+    flex: 1;
     max-width: 930px;
     margin: 0 auto;
     width: 100%;
@@ -48,6 +77,3 @@ h4 {
     padding: 0 16px;
 }
 
-.content {
-    padding: 0 16px;
-}
