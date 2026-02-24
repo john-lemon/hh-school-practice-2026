@@ -1,0 +1,39 @@
+
+.footer__services_background {
+    background: #EEEEEE;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.footer__services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    
+    
+}
+.service {
+    box-sizing: border-box;
+    display: flex;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    img {
+        padding-right: 30px;
+    }
+    p {
+        width: fit-content;
+        
+    }
+}
+
+@media screen and (width < 768px) {
+    .footer__services {
+        flex-direction: column;
+        gap: 0px;
+        align-items: start;
+    }
+}
+
+    
+
