@@ -19,17 +19,19 @@
                     <img src="assets/hh.svg" alt="logo" />
                 </a>
                 <div class="header__nav">
-                    <a href="/" class="header__nav_logo">
-                        <img src="assets/hh.svg" alt="logo" />
-                    </a>
-                    <nav class="header__nav_nav">
-                        <a href="/" class="header__nav_link">Одежда</a>
-                        <a href="/" class="header__nav_link">Сумки</a>
-                        <a href="/" class="header__nav_link">Аксессуары</a>
-                        <a href="/" class="header__nav_link"
-                            >Офисные принадлежности</a
-                        >
-                    </nav>
+                    <div class="header__nav_and_logo">
+                        <a href="/" class="header__nav_logo">
+                            <img src="assets/hh.svg" alt="logo" />
+                        </a>
+                        <nav class="header__nav_nav">
+                            <a href="/" class="header__nav_link">Одежда</a>
+                            <a href="/" class="header__nav_link">Сумки</a>
+                            <a href="/" class="header__nav_link">Аксессуары</a>
+                            <a href="/" class="header__nav_link">
+                                Офисные принадлежности
+                            </a>
+                        </nav>
+                    </div>
                     <div class="header__nav_buttons">
                         <button
                             class="header__button_search"
@@ -147,11 +149,11 @@
                 <div class="container about__container">
                     <div class="about__block">
                         <img src="./assets/support.svg" alt="support" />
-                        <p>Быстрая доставка по всей России</p>
+                        <p>Быстрая доставка по&nbsp;всей России</p>
                     </div>
                     <div class="about__block">
                         <img src="./assets/return.svg" alt="return" />
-                        <p>100% гарантия возврата и подлинность товара</p>
+                        <p>100% гарантия возврата и&nbsp;подлинность товара</p>
                     </div>
                     <div class="about__block">
                         <img src="./assets/delivery.svg" alt="delivery" />
@@ -212,10 +214,20 @@
                     <div class="separator"></div>
 
                     <div class="copyright">
-                        © 2019 Группа компаний HeadHunter<br />
-                        Сегодня на сайте 684 978 вакансий, 34 789 747 резюме,
-                        858 923 компании и за неделю <br />
-                        1 211 363 приглашения
+                        <p class="copyright__text">
+                            <span>
+                                &copy;&nbsp;2019 Группа компаний HeadHunter
+                            </span>
+
+                            <span>
+                                Сегодня на&nbsp;сайте
+                                684&nbsp;978&nbsp;вакансий,
+                                34&nbsp;789&nbsp;747&nbsp;резюме, 858&nbsp;923
+                                компании и&nbsp;за&nbsp;неделю
+                            </span>
+
+                            <span>1&nbsp;211&nbsp;363 приглашения</span>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -241,15 +253,18 @@
                         placeholder="Электронная почта"
                     />
                     <div class="order__modal_form_phone">
-                        <span class="order__modal_form_phone_span">+7</span>
+                        <span
+                            class="order__modal_form_phone_span order__modal_form_block"
+                            >+7</span
+                        >
                         <input
-                            class="order__modal_form_input code"
+                            class="order__modal_form_input order__modal_form_block code"
                             type="tel"
                             placeholder="Код"
                             maxlength="3"
                         />
                         <input
-                            class="order__modal_form_input"
+                            class="order__modal_form_input order__modal_form_block"
                             type="tel"
                             placeholder="Номер"
                             maxlength="7"

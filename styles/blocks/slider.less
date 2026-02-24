@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    position: relative;
     &__text {
         display: flex;
         flex-direction: column;
@@ -17,6 +17,7 @@
     @media screen and (@screen-tablet) {
         flex-direction: row-reverse;
         gap: 50px;
+        justify-content: center;
     }
 }
 
@@ -24,7 +25,8 @@
     display: flex;
     gap: 4px;
     @media screen and (@screen-tablet) {
-        align-self: end;
+        position: absolute;
+        bottom: 0;
     }
     &_dot {
         width: 10px;
