@@ -1,4 +1,5 @@
 @screen-tablet: ~'(min-width: 768px)';
+@screen-desktop: ~'(min-width: 1024px)';
 
 @font-face {
     font-family: "Novelist";
@@ -20,10 +21,27 @@ body {
     color: #333;
     margin: 0;
     position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1
 }
 
 h1, h2, h3, h4 {
     font-family: "Roboto Condensed", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 400;
+
+    @media screen and (@screen-tablet) {
+        font-size: 36px;
+    }
 }
 
 h2 {
@@ -51,3 +69,8 @@ h4 {
 .content {
     padding: 0 16px;
 }
+
+.hidden {
+    display: none;
+}
+

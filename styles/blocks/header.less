@@ -1,6 +1,33 @@
-.header {
-    background: #212122;
+.header { 
     width: 100%;
+}
+
+.header__top {
+    display: none;
+
+    @media screen and (@screen-tablet) {
+        display: flex;
+        justify-content: space-between;
+        padding-block: 12px;
+    }
+}
+
+.header__top-city {
+    color: gray;
+}
+
+.header__nav-top {
+    display: flex;
+    gap: 20px;
+}
+
+.header__nav-top-link {
+    text-decoration: none;
+    color: #609FCF;
+}
+
+.header__bottom {
+    background: #212122;
 }
 
 .header__container {
@@ -52,7 +79,7 @@ each(@items, {
     }
 });
 
-.header__nav {
+.header__nav-bot {
     display: none;
 
     @media screen and (@screen-tablet) {
@@ -83,7 +110,7 @@ each(@items, {
     }
 }
 
-.header__nav-link {
+.header__nav-bot-link {
     color: #ffffff;
     text-decoration: none;
 }
