@@ -9,12 +9,16 @@
 
     &__content {
         width: 100%;
-        max-width: 930px;
-        padding-left: 15px;
-        padding-right: 34px;
         display: flex;
         flex-direction: column;
         line-height: 20px;
+
+        @media screen and (min-width: @desktop) {
+            .element_size(130px);
+            display: grid;
+            grid-template-columns: repeat(1fr, 3);
+            grid-auto-flow: column;
+        }
     }
 
     .service {
@@ -41,11 +45,6 @@
             flex-direction: row;
             justify-content: space-between;
             margin: 0 auto;
-            padding: 0;
-            
-            >*:last-child {
-                margin-right: 88px;
-            }
         }
 
         .service {
@@ -61,9 +60,5 @@
                 }
             }
         }
-    }
-
-    @media screen and(min-width: @desktop) {
-        .element_size(130px);
     }
 }

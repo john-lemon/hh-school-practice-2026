@@ -26,25 +26,6 @@ body {
     color: #333;
     margin: 0;
     position: relative;
-
-    > .header,
-    > .content,
-    > .footer
-    {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    > .header,
-    > .content,
-    > .services,
-    > .footer 
-    {
-        @media screen and (min-width: @tablet) {
-            padding-left: 35px;
-            padding-right: 35px;
-        }
-    }
 }
 
 h1, 
@@ -68,10 +49,18 @@ h4 {
     font-weight: 700;
 }
 
-.container {
+.content {
     flex: 1;
+}
+
+.container {
     max-width: 930px;
     margin: 0 auto;
+    padding: 0 16px;
+
+    @media screen and (min-width: @tablet) {
+        padding: 0 35px;
+    }
 
     @media screen and (min-width: 930px) {
         box-sizing: content-box;
