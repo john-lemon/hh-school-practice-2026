@@ -26,12 +26,46 @@
         
     }
 }
-
+.footer__socials_background {
+    background: #212122;
+    width: 100%;
+}
+.footer__socials {
+    display: flex;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (width < 940px) {
+        .gray_logo {
+            display: none;
+        }
+    }
+}
+.socials_links {
+    display: flex;
+    gap: 15px;
+    
+}
+.download_links {
+    display: flex;
+    gap: 8px;
+}
 @media screen and (width < 768px) {
     .footer__services {
         flex-direction: column;
-        gap: 0px;
         align-items: start;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .service {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .footer__socials {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
     }
 }
 
