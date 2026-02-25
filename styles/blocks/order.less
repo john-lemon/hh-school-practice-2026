@@ -8,17 +8,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#order-modal:target {
+  opacity: 1;
+  visibility: visible;
 }
 
 .order {
     width: 600px;
-    height: 600px;
+    height: 700px;
     background: #ffffff;
     padding: 32px 16px;
+    position: relative;
 }
 
 .order__input {
-    border-color: #999;
+    border-color: var(--light-grey);
     border-width: 1px;
     border-style: solid;
     height: 38px;
@@ -33,11 +41,14 @@
 }
 
 .order__button {
-    background: #0F8FEE;
-    height: 38px;
-    width: 100%;
-    border: none;
-    color: #fff;
+  background: #0f8fee;
+  height: 38px;
+  border: none;
+  padding: 0 15px;
+  color: #fff;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-top: 7px;
 }
 
 .order__button:active {
@@ -50,7 +61,7 @@
     appearance: none;
     height: 38px;
     width: 100%;
-    border: 1px solid #999;
+    border: 1px solid var(--light-grey);
     background-image: url('../../assets/arrow.svg'), linear-gradient(to right, #999 1px, transparent 1px);
     background-repeat: no-repeat;
     background-position: 100% 50%;
@@ -61,7 +72,7 @@
 
 .order__pickup {
     margin-bottom: 20px;
-    border: 1px solid #999;
+    border: 1px solid var(--light-grey);
     display: flex;
 }
 
@@ -75,7 +86,7 @@
 }
 
 .order__pickup label:first-of-type {
-    border-right: 1px solid #999;
+  border-right: 1px solid var(--light-grey);
 }
 
 .order__pickup input[type="radio"] {
@@ -85,4 +96,56 @@
 .order__radio:checked + label {
     background: #eee;
     color: #333;
+}
+
+.order__payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__checkbox {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.order__address {
+  border: 1px solid var(--light-grey);
+  resize: none;
+  width: 100%;
+  height: 80px;
+  font:
+    14px/1.2 Arial,
+    sans-serif;
+}
+
+.order__address:focus-visible {
+  border: 1px solid var(--light-grey);
+  outline: 1px solid var(--light-grey);
+}
+
+.order__close {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }

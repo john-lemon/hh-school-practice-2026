@@ -6,9 +6,10 @@
     font-weight: normal;
 }
 
-
 :root {
     --color-dark: #212122;
+    --btn-bg: #0F8FEE;
+    --light-grey:#DFDEDD;
 }
 
 * {
@@ -26,6 +27,13 @@ h1, h2, h3, h4 {
     font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+    font-weight: 400;
+}
+
 h2 {
     font-size: 20px;
     line-height: 1.2;
@@ -38,6 +46,7 @@ h4 {
     line-height: 19px;
     margin-bottom: 4px;
     font-weight: 700;
+    margin-top: 10px;
 }
 
 .container {
@@ -51,4 +60,9 @@ h4 {
 
 .content {
     padding: 0 16px;
+}
+
+button {
+    color: white;
+    background-color: var(--btn-bg);
 }
