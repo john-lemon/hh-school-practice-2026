@@ -1,0 +1,61 @@
+.services {
+    background: #EEEEEE;
+    width: 100%;
+    margin-top: 30px;
+    height: 240px;
+}
+
+.services__container {
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.advantages {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 85%; 
+    align-items: center;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    
+    &__img {
+        width: 40px;
+    }
+
+    &__description {
+        max-width: 50%;
+    }
+}
+
+@media screen and (@screen-tablet) {
+    .services {
+        margin-top: 80px;
+        height: 130px;
+    }
+
+    .advantages {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    
+    .advantage {
+        gap: 30px;
+        
+        &__img {
+            width: 50px;
+        }
+
+        &__description {
+            max-width: 160px;
+        }
+    }
+}

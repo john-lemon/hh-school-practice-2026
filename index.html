@@ -7,14 +7,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/styles.less" />
+        <link rel="stylesheet" href="./styles/styles.less">
     </head>
     <body>
         <header class="header">
             <div class="header__container container">
                 <div class="header__left">
                     <a href="/">
-                        <img src="assets/hh.svg" />
+                        <img src="assets/hh.svg" alt="Head Hunter">
                     </a>
                     <nav class="header__nav">
                         <a href="/" class="header__nav-link">Одежда</a>
@@ -42,48 +42,67 @@
                 </div>
             </div>
         </header>
-        <main class="content container">
-            <section class="catalog">
-                <h2>Популярные товары</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="./images/product-2.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="./images/product-3.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__sale"></div>
-                        <img class="card__img" src="./images/product-4.jpg" alt="Зонт" />
-                        <h4 class="card__title">Футболка</h4>
-                        <div class="card__price">
-                            <span class="card__price_old">690</span>
-                            390 ₽
+        <main class="content">
+            <div class="container">
+                <section class="catalog">
+                    <h2>Популярные товары</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <img class="card__img" src="./images/product-1.jpg" alt="Зонт">
+                            <h4 class="card__title">Зонт</h4>
+                            <div class="card__price">1 990 ₽</div>
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="./images/product-2.jpg" alt="Сумка">
+                            <h4 class="card__title">Сумка</h4>
+                            <div class="card__price">290 ₽</div>
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="./images/product-3.jpg" alt="Шлепанцы">
+                            <h4 class="card__title">Шлепанцы</h4>
+                            <div class="card__price">790 ₽</div>
+                        </div>
+                        <div class="card">
+                            <div class="card__sale"></div>
+                            <img class="card__img" src="./images/product-4.jpg" alt="Футболка">
+                            <h4 class="card__title">Футболка</h4>
+                            <div class="card__price">
+                                <span class="card__price_old">690</span>
+                                390 ₽
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="./images/product-5.jpg" alt="Толстовка">
+                            <h4 class="card__title">Толстовка</h4>
+                            <div class="card__price">3 990 ₽</div>
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="./images/product-6.jpg" alt="Подушка">
+                            <h4 class="card__title">Подушка</h4>
+                            <div class="card__price">990 ₽</div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="./images/product-2.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
-
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
+        <div class="services">
+            <div class="services__container container">
+                <div class="advantages">
+                    <div class="advantage">
+                        <img class="advantage__img" src="assets/support.svg" alt="Быстрая доставка">
+                        <div class="advantage__description">Быстрая доставка по&nbsp;всей России</div> 
+                    </div>
+                    <div class="advantage">
+                        <img class="advantage__img" src="assets/return.svg" alt="Гарантия возврата">
+                        <div class="advantage__description">100% гарантия возврата и&nbsp;подлинность товара</div> 
+                    </div>
+                    <div class="advantage">
+                        <img class="advantage__img" src="assets/delivery.svg" alt="Круглосуточная служба поддержи">
+                        <div class="advantage__description">Круглосуточная служба поддержки</div> 
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="order-background">
             <div class="order">
                 <form action="/" method="get">
@@ -116,10 +135,35 @@
                         <option>Вологда</option>
                         <option>Казань</option>
                     </select>
-
                     <button type="submit" class="order__button">Оформить заказ</button>
                 </form>
             </div>
         </div>
+        <footer>
+            <div class="footer__container container">
+                <div class="channels">
+                    <div class="channels__left">
+                        <a href="/"><img class="channels__left__img" src="assets/facebook.svg" alt="Facebook"></a>
+                        <a href="/"><img class="channels__left__img" src="assets/twitter.svg" alt="Twitter"></a>
+                        <a href="/"><img class="channels__left__img" src="assets/vk.svg" alt="VK"></a>
+                        <a href="/"><img class="channels__left__img" src="assets/instagram.svg" alt="Instagram"></a>
+                    </div>
+                    <div class="channels__center">
+                        <a href="/"><img class="channels__center__img" src="assets/appStore.svg" alt="App Store"></a>
+                        <a href="/"><img class="channels__center__img" src="assets/googlePlay.svg" alt="Google Play"></a>
+                    </div>
+                    <div class="channels__right">
+                        <a href="/"><img class="channels__right__img" src="assets/hhFooter.svg" alt="Head Hunter"></a>
+                    </div>
+                </div>
+                <div class="statistics">
+                    © 2019 Группа компаний HeadHunter<br>
+                    Сегодня на&nbsp;сайте 684&nbsp;978&nbsp;вакансий, 
+                    34&nbsp;789&nbsp;747&nbsp;резюме, 
+                    858&nbsp;923&nbsp;компании и&nbsp;за&nbsp;неделю 
+                    1&nbsp;211&nbsp;363 приглашения
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
