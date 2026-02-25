@@ -11,8 +11,12 @@
     &__container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
         gap: 64px;
+        @media screen and (@screen-tablet) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     
     &__card {
