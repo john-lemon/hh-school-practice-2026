@@ -1,4 +1,5 @@
 @screen-tablet: ~'(min-width: 768px)';
+@container-content-box: ~'(min-width: 930px)';
 
 @font-face {
     font-family: "Novelist";
@@ -8,7 +9,8 @@
 
 
 :root {
-    --color-dark: #212122;
+    --color-primary: #212122;
+    --color-secondary: #EEEEEE;
 }
 
 * {
@@ -20,6 +22,10 @@ body {
     color: #333;
     margin: 0;
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -43,11 +49,14 @@ h4 {
 .container {
     max-width: 930px;
     margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
     padding: 0 16px;
+
+    @media screen and (@container-content-box) {
+        box-sizing: content-box;
+    }
 }
 
 .content {
-    padding: 0 16px;
+    flex: 1;
 }
+
