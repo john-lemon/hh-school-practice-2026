@@ -16,10 +16,13 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font: 14px/1.2 Arial, sans-serif;
     color: #333;
     margin: 0;
     position: relative;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -49,5 +52,6 @@ h4 {
 }
 
 .content {
+    flex: 1;
     padding: 0 16px;
 }
