@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel *.html",
-    "build": "parcel build *.html --public-url '/hh-school-practice-2026/'",
+    "build": "parcel build *.html --public-url './'",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
