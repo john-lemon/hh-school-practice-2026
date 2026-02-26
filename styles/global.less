@@ -1,4 +1,4 @@
-@screen-tablet: ~'(min-width: 768px)';
+
 
 @font-face {
     font-family: "Novelist";
@@ -22,7 +22,10 @@ body {
     position: relative;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
@@ -40,14 +43,30 @@ h4 {
     font-weight: 700;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     max-width: 930px;
     margin: 0 auto;
     width: 100%;
-    box-sizing: border-box;
     padding: 0 16px;
 }
 
 .content {
     padding: 0 16px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
