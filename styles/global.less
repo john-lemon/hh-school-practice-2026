@@ -18,11 +18,26 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font: 14px/1.2 Arial, sans-serif;
     color: #333;
     margin: 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3, h4 {
