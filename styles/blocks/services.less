@@ -21,16 +21,24 @@
     
 }
 
-.services__card_text {
+.services__card_text { 
     font-size: 14px;
     line-height: 20px;
     color: #333;
 }
 
 
-@media screen and (@screen-tablet) {
+@media screen and (@screen-desktop) {
     .services {
         grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
+        align-items: center;
+    }
+}
+
+@media screen and (@screen-tablet) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 40px;
         align-items: center;
     }
