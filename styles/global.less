@@ -1,4 +1,6 @@
 @screen-tablet: ~'(min-width: 768px)';
+@screen-desktop: ~'(min-width: 1024px)';
+
 
 @font-face {
     font-family: "Novelist";
@@ -15,11 +17,20 @@
     box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+}
+
 body {
     font: 14px/1.2 Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
     color: #333;
     margin: 0;
     position: relative;
+}
+main{
+    flex:1
 }
 
 h1, h2, h3, h4 {
@@ -33,13 +44,21 @@ h2 {
     font-weight: 400;
 }
 
-h4 {
+h3 {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 4px;
     font-weight: 700;
 }
-
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
 .container {
     max-width: 930px;
     margin: 0 auto;
