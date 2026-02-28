@@ -12,11 +12,16 @@ footer {
   
   span {
     line-height: 20px;
-  }
-}
 
-.footer__links-cont {
-  display: flex;
+    @media screen and (@screen-tablet-max) {
+      display: block;
+      max-width: 80%;
+    }
+
+    @media screen and (max-width: 530px) {
+      max-width: none;
+    }
+  }
 }
 
 .footer__socials-cont {
@@ -27,4 +32,15 @@ footer {
 .footer__links-cont {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 530px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.footer__logo {
+    @media screen and (max-width: 615px) {
+      display: none;
+  }
 }
