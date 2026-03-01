@@ -16,18 +16,18 @@
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
         padding: 30px 15px;
         gap: 30px;
 
         @media screen and (@screen-mobile) {
-            justify-content: space-around;
-            padding: 30px 35px;
+            justify-content: space-between;
         }
 
-        @media screen and (@screen-tablet) {
-            justify-content: space-between;
+        @media screen and (width >=600px) {
+            flex-direction: row;
+            align-items: center;
             gap: 0;
             padding: 0 15px;
         }

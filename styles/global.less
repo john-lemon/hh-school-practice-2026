@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "Novelist";
     src: url(../fonts/Novelist.otf);
@@ -15,11 +13,18 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font: 14px/1.2 Arial, sans-serif;
     color: #333;
     margin: 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 h1,
@@ -58,15 +63,9 @@ ul {
 
 .content {
     padding: 0 16px;
+    flex: 1;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
+    display: none;
 }
