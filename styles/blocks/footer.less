@@ -1,0 +1,82 @@
+.footer__down{
+    background-color:#212122;
+    height: 300px;
+    padding: 16px 8px;
+    
+   
+}
+.contacts__cards{
+    display: flex;
+    gap:20px;
+margin-bottom: 20px;
+}
+.contacts__cards div {
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact__card_facebook{
+  background-image: url("/assets/facebook.svg");
+  
+}
+.contact__card_twitter{
+    background-image: url("/assets/twitter.svg");
+}
+.contact__card_vk{
+    background-image: url("/assets/vk.svg");
+}
+.contact__card_instagram{
+    background-image: url("/assets/instagram.svg");
+}
+.footer__stores {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.footer__stores a{
+    display: block;
+    height: 50px;
+    width: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.store__appstore {
+   background-image: url(/assets/appstore.svg);
+}
+
+.store__googleplay {
+    background-image: url(/assets/googleplay.svg);
+}
+.footer__logo{
+    display: none;
+}
+@media  screen and (@screen-desktop) {
+    .footer__down_refs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer__logo{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url("/assets/hh_gray.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+@media  screen and (@screen-tablet) {
+    .footer__down_refs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+}
