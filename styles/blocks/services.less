@@ -63,7 +63,10 @@
     }
 
     &__text {
-        max-width: 160px;
         margin: 0;
+
+        @media screen and (width >=600px) {
+            max-width: 160px;
+        }
     }
 }
