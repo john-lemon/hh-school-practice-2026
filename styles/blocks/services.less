@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   height: fit-content;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media screen and (@screen-tablet-max) {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   @media screen and (max-width: 570px) {
@@ -27,25 +29,12 @@
   span {
     display: inline-block;
     max-width: 160px;
-
-      @media screen and (@screen-tablet-max) {
-         max-width: none;
-    }
-
-    @media screen and (max-width:630px) {
-        max-width: 100px;
-    }
-
-    @media screen and (max-width:570px) {
-        max-width: none;
-    }
   }
 }
 
 .services__container {
   background-color: #eee;
   margin-top: 80px;
-  flex: 1 1 auto;
 
   @media screen and (@screen-tablet-max) {
     margin-top: 50px;
@@ -59,6 +48,7 @@
 
   @media screen and (@screen-tablet-max) {
     gap: 10px;
+    padding-right: 6px;
   }
 
   @media screen and (max-width: 530px) {
