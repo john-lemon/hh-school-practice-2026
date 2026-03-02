@@ -1,4 +1,6 @@
-@screen-tablet: ~'(min-width: 768px)';
+@screen-tablet-min: ~'(min-width: 768px)';
+@screen-tablet-max: ~'(max-width: 768px)';
+@screen-desktop: ~'(max-width: 940px)';
 
 @font-face {
     font-family: "Novelist";
@@ -20,6 +22,9 @@ body {
     color: #333;
     margin: 0;
     position: relative;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
 }
 
 h1, h2, h3, h4 {
@@ -50,4 +55,5 @@ h4 {
 
 .content {
     padding: 0 16px;
+    flex: 1 0 auto; 
 }
