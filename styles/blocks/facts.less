@@ -1,0 +1,51 @@
+.services-block {
+    background-color: #EEEEEE;
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.service {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 34px;
+    align-items: center;
+    
+}
+
+.service:last-child {
+    margin-bottom: 30px;
+}
+
+.service img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 768px){
+
+    .services {
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: space-between;
+    }
+
+    .service {
+        margin: 0px;
+    }
+
+    .service:last-child {
+    margin-bottom: 0px;
+    }
+
+    .service span {
+        max-width: 160px;
+    }
+    
+}
