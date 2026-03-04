@@ -1,12 +1,16 @@
 .services {
-    width: 100%;
-    background-color: #f2f2f2;
-    padding: 24px 16px;
-    margin-top: 20px;
+  width: 100%;
+  padding: 24px 16px;
+  margin-top: 20px;
+  background-color: var(--color-grays);
+}
 
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 20px;
+.services__inner {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
 }
 
 .services__card {
@@ -24,14 +28,13 @@
 .services__card_text { 
     font-size: 14px;
     line-height: 20px;
-    color: #333;
+    color: var(--color-dark);
 }
 
 
 @media screen and (@screen-tablet) {
-    .services {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 40px;
-        align-items: center;
-    }
+  .services__inner {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+  }
 }
