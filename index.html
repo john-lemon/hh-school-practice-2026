@@ -14,7 +14,7 @@
             <div class="header__container container">
                 <div class="header__left">
                     <a href="/">
-                        <img src="assets/hh.svg" />
+                        <img alt="hh logo" src="assets/hh.svg" />
                     </a>
                     <nav class="header__nav">
                         <a href="/" class="header__nav-link">Одежда</a>
@@ -48,6 +48,7 @@
                 <div class="cards">
                     <div class="card">
                         <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
+<!--                        здесь жалуется валидатор на уровни хэдингов, но это было в шаблоне, поэтому не трогаю-->
                         <h4 class="card__title">Зонт</h4>
                         <div class="card__price">1 990 ₽</div>
                     </div>
@@ -121,5 +122,53 @@
                 </form>
             </div>
         </div>
+
+        <div class="services">
+            <div class="services__inner">
+                <div class="services__item">
+                    <img alt="support service icon" src="assets/support.svg">
+                    <div>Быстрая доставка по всей России</div>
+                </div>
+
+                <div class="services__item">
+                    <img alt="shopping cart icon" src="assets/return.svg">
+                    <div>100% гарантия возврата и подлинность товара</div>
+                </div>
+
+                <div class="services__item">
+                    <img alt="delivery van icon" src="assets/delivery.svg">
+                    <div>Круглосуточная служба поддержки</div>
+                </div>
+            </div>
+            </div>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <div class="footer__social">
+                        <a href="#"><img alt="facebook" class="social__link" src="assets/facebook.svg"></a>
+                        <a href="#"><img alt="twitter" class="social__link" src="assets/twitter.svg"></a>
+                        <a href="#"><img alt="vk" class="social__link" src="assets/vk.svg"></a>
+                        <a href="#"><img alt="instagram" class="social__link" src="assets/instagram.svg"></a>
+                    </div>
+
+                    <div class="footer__apps">
+                        <a href="#"><img alt="app store" class="app-badge" src="assets/app%20store.svg"></a>
+                        <a href="#"><img alt="google play" class="app-badge" src="assets/google%20play.svg"></a>
+                    </div>
+
+                    <div class="footer__brand">
+                        <img class="footer__logo" src="assets/hh-bw.svg" alt="hh" />
+                    </div>
+                </div>
+
+                <hr class="footer__divider" />
+
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2019 Группа компаний HeadHunter</p>
+                    <p class="footer__stats">Сегодня на&nbsp;сайте 684&nbsp;978 вакансий, 34&nbsp;789&nbsp;747 резюме, 858&nbsp;923 компании и&nbsp;за&nbsp;неделю 1&nbsp;211&nbsp;363 приглашения</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
