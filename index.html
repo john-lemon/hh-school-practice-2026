@@ -1,125 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>HTML и CSS</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/styles.less" />
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__container container">
-                <div class="header__left">
-                    <a href="/">
-                        <img src="assets/hh.svg" />
-                    </a>
-                    <nav class="header__nav">
-                        <a href="/" class="header__nav-link">Одежда</a>
-                        <a href="/" class="header__nav-link">Сумки</a>
-                        <a href="/" class="header__nav-link">Аксессуары</a>
-                        <a href="/" class="header__nav-link">Офисные принадлежности</a>
-                    </nav>
-                </div>
-                <div class="header__right">
-                    <button class="header__button header__button_search" aria-label="Поиск"></button>
-                    <button class="header__sign-in">
-                        Войти
-                    </button>
-                </div>
-                <div class="header__buttons">
-                    <button class="header__button header__button_search" aria-label="Поиск">
 
-                    </button>
-                    <button class="header__button header__button_profile" aria-label="Профиль">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML и CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.less" />
+</head>
 
-                    </button>
-                    <button class="header__button header__button_menu" aria-label="Меню">
-
-                    </button>
-                </div>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__left">
+                <a href="/">
+                    <img src="assets/hh.svg" />
+                </a>
+                <nav class="header__nav">
+                    <a href="/" class="header__nav-link">Одежда</a>
+                    <a href="/" class="header__nav-link">Сумки</a>
+                    <a href="/" class="header__nav-link">Аксессуары</a>
+                    <a href="/" class="header__nav-link">Офисные принадлежности</a>
+                </nav>
             </div>
-        </header>
-        <main class="content container">
-            <section class="catalog">
-                <h2>Популярные товары</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="./images/product-2.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="./images/product-3.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
-                    <div class="card">
-                        <div class="card__sale"></div>
-                        <img class="card__img" src="./images/product-4.jpg" alt="Зонт" />
-                        <h4 class="card__title">Футболка</h4>
-                        <div class="card__price">
-                            <span class="card__price_old">690</span>
-                            390 ₽
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="./images/product-2.jpg" alt="Зонт" />
-                        <h4 class="card__title">Зонт</h4>
-                        <div class="card__price">1 990 ₽</div>
-                    </div>
+            <div class="header__right">
+                <button class="header__button header__button_search" aria-label="Поиск"></button>
+                <button class="header__sign-in">
+                    Войти
+                </button>
+            </div>
+            <div class="header__buttons">
+                <button class="header__button header__button_search" aria-label="Поиск">
 
-                </div>
-            </section>
-        </main>
-        <div class="order-background">
-            <div class="order">
-                <form action="/" method="get">
-                    <h4>Контактное лицо</h4>
-                    <input type="text" class="order__input" placeholder="ФИО" name="fio">
-                    <input type="email" class="order__input" placeholder="Электронная почта" name="email">
-                    <div>
-                        <h4>Способ получения заказа</h4>
-                        <div class="order__pickup">
-                            <input
-                                type="radio"
-                                name="deliveryType"
-                                id="order-pickup"
-                                class="order__radio"
-                                value="pickup"
-                            >
-                            <label for="order-pickup">Самовывоз</label>
-                            <input type="radio"
-                                name="deliveryType"
-                                id="order-delivery"
-                                class="order__radio"
-                                value="delivery"
-                            >
-                            <label for="order-delivery">Доставка</label>
-                        </div>
-                    </div>
-                    <h4>Адрес</h4>
-                    <select name="city" class="select">
-                        <option>Москва</option>
-                        <option>Вологда</option>
-                        <option>Казань</option>
-                    </select>
+                </button>
+                <button class="header__button header__button_profile" aria-label="Профиль">
 
-                    <button type="submit" class="order__button">Оформить заказ</button>
-                </form>
+                </button>
+                <button class="header__button header__button_menu" aria-label="Меню">
+
+                </button>
             </div>
         </div>
-    </body>
+    </header>
+    <main class="content container">
+        <section class="catalog">
+            <h2>Популярные товары</h2>
+            <div class="cards">
+                <div class="card">
+                    <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
+                    <h4 class="card__title">Зонт</h4>
+                    <div class="card__price">1 990 ₽</div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./images/product-2.jpg" alt="Зонт" />
+                    <h4 class="card__title">Зонт</h4>
+                    <div class="card__price">1 990 ₽</div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./images/product-3.jpg" alt="Зонт" />
+                    <h4 class="card__title">Зонт</h4>
+                    <div class="card__price">1 990 ₽</div>
+                </div>
+                <div class="card">
+                    <div class="card__sale"></div>
+                    <img class="card__img" src="./images/product-4.jpg" alt="Зонт" />
+                    <h4 class="card__title">Футболка</h4>
+                    <div class="card__price">
+                        <span class="card__price_old">690</span>
+                        390 ₽
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./images/product-1.jpg" alt="Зонт" />
+                    <h4 class="card__title">Зонт</h4>
+                    <div class="card__price">1 990 ₽</div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./images/product-2.jpg" alt="Зонт" />
+                    <h4 class="card__title">Зонт</h4>
+                    <div class="card__price">1 990 ₽</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <div class="order-background">
+        <div class="order">
+            <form action="/" method="get">
+                <h4>Контактное лицо</h4>
+                <input type="text" class="order__input" placeholder="ФИО" name="fio">
+                <input type="email" class="order__input" placeholder="Электронная почта" name="email">
+                <div>
+                    <h4>Способ получения заказа</h4>
+                    <div class="order__pickup">
+                        <input type="radio" name="deliveryType" id="order-pickup" class="order__radio" value="pickup">
+                        <label for="order-pickup">Самовывоз</label>
+                        <input type="radio" name="deliveryType" id="order-delivery" class="order__radio"
+                            value="delivery">
+                        <label for="order-delivery">Доставка</label>
+                    </div>
+                </div>
+                <h4>Адрес</h4>
+                <select name="city" class="select">
+                    <option>Москва</option>
+                    <option>Вологда</option>
+                    <option>Казань</option>
+                </select>
+
+                <button type="submit" class="order__button">Оформить заказ</button>
+            </form>
+        </div>
+    </div>
+    <div class="services-block">
+        <div class="services container">
+            <div class="service">
+                <img src="assets/support.svg" />
+                <span>Быстрая доставка по&nbsp;всей России</span>
+            </div>
+            <div class="service">
+                <img src="assets/return.svg" />
+                <span>100% гарантия возврата и&nbsp;подлинность товара</span>
+            </div>
+            <div class="service">
+                <img src="assets/delivery.svg" />
+                <span>Круглосуточная служба поддержки</span>
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__links">
+            <div class="footer__media">
+                <img src="assets/facebook.svg" />
+                <img src="assets/twitter.svg" />
+                <img src="assets/vk.svg" />
+                <img src="assets/instagram.svg" />
+            </div>
+            <div class="footer__sources">
+                <img src="assets/app store.svg" />
+                <img src="assets/google play.svg" />
+            </div>
+            <a class="footer__logo" href="/">
+                    <img src="assets/hh_footer.svg" />
+            </a>
+        </div>
+        <div class="footer__hr"></div>
+        <div class="footer__text">
+            <span>&copy;&nbsp;2019 Группа компаний HeadHunter</span>
+            <div class="footer__dop-info">
+                <span>Сегодня на&nbsp;сайте 684&nbsp;978&nbsp;вакансий,</span>
+                <span>34&nbsp;789&nbsp;747&nbsp;резюме, 858&nbsp;923 компании</span>
+                <span>и&nbsp;за&nbsp;неделю 1&nbsp;211&nbsp;363 приглашения</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </html>
