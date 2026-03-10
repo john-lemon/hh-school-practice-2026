@@ -1,0 +1,47 @@
+.services {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #EEE;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .services__body {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 50px;
+        }
+
+        @media screen and (@screen-mobile) {
+            img {
+                width: 40px;
+            }
+        }
+    }
+
+    @media screen and (@screen-mobile) {
+        .services__body {
+            width: 274px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
+.services__card {
+    display: flex;
+    gap: 30px;
+}
+
+.services__card p {
+    width: 65%;
+}
+
+@media screen and (@screen-mobile) {
+    .services__card p {
+        width: 100%;
+    }
+}
