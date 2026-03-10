@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    background: #212122;
+    align-items: center;
+    justify-content: space-between;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header_button {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+}
+
+h2 {
+    font-family: "Roboto Condensed", arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.content {
+    padding-bottom: 0 16px;
+}
+
+.card {
+    width: 50%;
+
+}
