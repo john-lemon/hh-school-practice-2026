@@ -1,0 +1,37 @@
+.services {
+    background-color: #EEEEEE;
+    height: 240px;
+    margin-top: 30px;
+
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (@screen-tablet) {
+    .services {
+        height: 100px;
+    }
+    .services .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .service {
+        gap: 10px;
+
+        span {
+            max-width: 160px;
+        }
+    }
+}
